@@ -13,8 +13,8 @@ codes.on("voiceChannelLeave", (msg) => {
 });
 
 codes.on("messageCreate", (msg) => {
-    if(msg.author.id !== "Owner id") return codes.createMessage('__**This Command is only for the bot Owner**__');
-    if(msg.content === "$voice") {
+    if(msg.author.id !== "470500980342128650") return codes.createMessage('__**This Command is only for the bot Owner**__');
+    if(msg.content === "uv") {
         let users = msg.channel.guild.members.map(m => m.user.id);
         let messages = [];
         messages.push(users);
