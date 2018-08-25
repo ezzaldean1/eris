@@ -42,5 +42,21 @@ client.on('message', msg => {
 })
 
 
+ const lol =
+[
+'**Welcome To United:tanabata_tree: ..**',
+'** Welcome to ``United``:rose: **',
+'** ``Welcome to Server United``**',
+'** Welcome to United**',
+
+]
+client.on('guildMemberAdd', member => {
+const codes = member.guild.channels.get("481132962969288713");//ايدي الشات
+if(!codes) return;
+if(codes) {
+codes.send(  `${lol[Math.floor(Math.random() * lol.length)]}`);          
+}
+});
+  
 
 client.login(process.env.BOT_TOKEN);  //
